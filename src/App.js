@@ -7,7 +7,7 @@ import myEpicNft from './utils/MyEpicNFT.json'
 // Constants
 const TWITTER_HANDLE = 'h1HiveOrg';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = 'https://testnets.opensea.io/collection/web3familia-v2';
+const OPENSEA_LINK = 'https://testnets.opensea.io/collection/1hive-onboard-v3';
 const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = "0x513C9A10ffAD25b35f61c89E7C5d813dA11DbC28";
 
