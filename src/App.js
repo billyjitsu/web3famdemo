@@ -5,11 +5,11 @@ import React, { useEffect, useState } from "react";
 import myEpicNft from './utils/MyEpicNFT.json'
 
 // Constants
-const TWITTER_HANDLE = 'Web3Familia';
+const TWITTER_HANDLE = 'h1HiveOrg';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = 'https://testnets.opensea.io/collection/web3familia-v2';
 const TOTAL_MINT_COUNT = 50;
-const CONTRACT_ADDRESS = "0x6240165212ce297d7dbe410aAD313289160D2bcf";
+const CONTRACT_ADDRESS = "0x513C9A10ffAD25b35f61c89E7C5d813dA11DbC28";
 
 const App = () => {
 
@@ -120,7 +120,7 @@ const App = () => {
           const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, myEpicNft.abi, signer);
   
           console.log("Going to pop wallet now to pay gas...")
-          let nftTxn = await connectedContract.mintStarter(1);
+          let nftTxn = await connectedContract.mintToken(1);
 
           setLoading(true);
           setNFTMinted(false);
@@ -167,7 +167,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">Web3Familia Mint Shop</p>
+          <p className="header gradient-text">1Hive Mint Shop</p>
           <p className="sub-text">
             Proof of completion for onboarding.  Mint yours now.
           </p>
@@ -203,7 +203,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built by the W3F Community`}</a>
+          >{`built by the 1Hive Community`}</a>
         </div>
       </div>
     </div>
